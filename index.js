@@ -14,7 +14,7 @@ dotenv.config();
 //app.use("/assets",express.static(path.join(__dirname,'public/assets'));
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/AppDB",{
+mongoose.connect("mongodb+srv://evikas10020:qTRC2ALKi23JU1AG@cluster0.y8abisn.mongodb.net/?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

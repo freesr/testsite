@@ -37,7 +37,7 @@ const upload = multer({storage});
 
 
 app.post("/auth/register",upload.single("picture"),register);
-app.use("/auth",authRoute);
-app.use("/users",userRoutes);
+//app.use("/auth",authRoute);
+//app.use("/users",userRoutes);
 app.listen(process.env.PORT || 3030, () => console.log(`Server Port: 3000`));
 
